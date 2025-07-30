@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ฟอร์มสั่งซื้อ - CS 30 ปี</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-yellow-100 to-orange-100 min-h-screen flex items-center justify-center p-6">
+  <div class="w-full max-w-4xl bg-white p-10 rounded-2xl shadow-xl">
+    <h1 class="text-3xl font-bold text-orange-700 text-center mb-8">ฟอร์มสั่งซื้อของที่ระลึก 30 ปี CS</h1>
+
+    <form class="space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">ชื่อ-นามสกุล:</label>
+          <input type="text" class="w-full border border-gray-300 p-3 rounded-lg" required>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">เบอร์โทร:</label>
+          <input type="tel" class="w-full border border-gray-300 p-3 rounded-lg" required>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">ที่อยู่จัดส่ง:</label>
+        <textarea class="w-full border border-gray-300 p-3 rounded-lg" rows="3" required></textarea>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">รายการสินค้า:</label>
+        <textarea class="w-full border border-gray-300 p-3 rounded-lg" placeholder="ระบุสินค้า สี ขนาด จำนวน" rows="3" required></textarea>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">แนบสลิปโอนเงิน:</label>
+        <input type="file" accept="image/*" class="w-full text-gray-600" required>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">วันที่ซื้อ:</label>
+          <input type="date" class="w-full border border-gray-300 p-3 rounded-lg" required>
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-1">ช่องทางชำระเงิน:</label>
+          <select class="w-full border border-gray-300 p-3 rounded-lg" required>
+            <option>โอนผ่านบัญชีธนาคาร</option>
+            <option>พร้อมเพย์</option>
+            <option>เงินสด</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">วิธีรับสินค้า:</label>
+        <select class="w-full border border-gray-300 p-3 rounded-lg" required>
+          <option>จัดส่ง</option>
+          <option>รับด้วยตนเอง</option>
+        </select>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-md">ส่งคำสั่งซื้อ</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
